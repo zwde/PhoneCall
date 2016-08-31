@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zw.call.MainActivity">
+
+  <android.support.v4.view.ViewPager
+      android:id="@+id/vpager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentTop="true"
+      />
+
+
+<RadioGroup
+    android:id="@+id/rg_tab_bar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/bg_white"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    >
+  <RadioButton
+      android:id="@+id/rb_call"
+      style="@style/tab_menu_item"
+      android:text="拨号"
+      android:drawableTop="@drawable/tab_menu_call"
+      />
+    <RadioButton
+        android:id="@+id/rb_contactlist"
+        style="@style/tab_menu_item"
+        android:text="联系人"
+        android:drawableTop="@drawable/tab_menu_contactlist"
+        />
+    <RadioButton
+        android:id="@+id/rb_search"
+        style="@style/tab_menu_item"
+        android:text="搜索"
+        android:drawableTop="@drawable/tab_menu_search"
+        />
+    <RadioButton
+        android:id="@+id/rb_add"
+        style="@style/tab_menu_item"
+        android:text="添加"
+        android:drawableTop="@drawable/tab_menu_add"
+        />
+</RadioGroup>
+
+
+</RelativeLayout>
